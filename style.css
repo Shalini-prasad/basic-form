@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,700&display=swap');
+:root{
+    --sec-font-color:#9CA3AF;
+    --button-color:#F87171;
+    --button-text-color:white;
+
+}
+
+*{
+    margin: 0;
+    padding:0;
+    margin-top: .7em;
+    font-family: 'Lato';
+}
+
+/* fieldset and legend */
+fieldset{
+    margin: 2em 1em;
+    padding: 1em 2em;
+    border:1px solid var(--sec-font-color);
+    border-radius: 6px;
+    max-width: 400px;
+
+}
+
+legend{
+    font-size: 1.25em;
+    padding:0 .25em;
+    color:var(--sec-font-color);
+}
+/* labels */
+
+label{
+    display: block;
+    margin-top: 1em;
+}
+
+.checks label{
+    margin-top: 0;
+}
+label:first-of-type{
+    margin-top: 0;
+}
+
+/* input and textarea */
+input{
+    padding:.5em;
+    border: 1px solid var(--sec-font-color);
+}
+
+input[type="email"], input[type='text'], input[type="tel"]{
+    width:19em;
+}
+
+textarea{
+    border: 1px solid var(--sec-font-color);
+    padding:.5rem;
+    min-height: 8em;
+    min-width: 90%;
+}
+
+/* radio buttons and checkbox */
+.checks{
+    margin-bottom: 1em;
+}
+
+.checks p{
+    margin-bottom: 0;
+}
+
+input[type="checkbox"]+label, input[type="radio"]+label 
+{
+    display: inline-block;
+    margin-top: 0;
+    padding-top: 0;
+    
+}
+
+input[type="radio"]{
+    margin-left: 1.5em;
+    margin-right: 0;
+}
+
+input[type="radio"]:first-of-type{
+    margin-left: 0;
+}
+
+/* submit button */
+input[type="submit"]{
+    padding: .5em 1em;
+    border-radius: 6px;
+    background-color: var(--button-color);
+    color:var(--button-text-color) ;
+    font-size: .8em;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+/* larger screen */
+@media screen and (min-width:430px) {
+    legend{
+        font-size: 1.75em;
+    }
+
+    fieldset{
+        width:40%;
+        min-width: 320px;
+        margin: auto;
+    }
+
+    .checks label{
+        display: inline-block;
+        padding-top: .5em;
+        margin-top: 0;
+        margin-right: .5em;
+    }     
+}
+@media screen and (max-width:391px){
+    legend{
+        font-size: .8em;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+    
+
+
+
+
