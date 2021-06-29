@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+    <link href="stylesheet.css" rel="stylesheet">
+</head>
+<body>
+   <section>
+       <form action="#" method="POST">
+           <fieldset>
+               <legend>Survey Form</legend>
+
+               <label for="fullname">Your Name:</label>
+               <input type="text" name="fullname" id="fullname">
+
+               <label for="email">Email:</label>
+               <input type="email" name="email" id="email">
+
+               <label for="Phone">Phone:</label>
+               <input type="tel" name="Phone" id="Phone" pattern="[0-9]{10}" maxlength="10">
+
+               <label for="message">Your Message</label>
+               <textarea name="message" id="message"></textarea>
+
+               <div class="checks">
+                   <input type="checkbox" name="copyEmail" id="copyEmail">
+                   <label for="copyEmail">Send copy to my email</label>
+               </div>
+
+               <div class="checks flex">
+                   <p>Preferred method of contact:</p>
+
+                   <input type="radio" name="contact" id="contactEmail" value="email">
+                   <label for="contactEmail">Email</label>
+
+                   <input type="radio" name="contact" id="contactTell" value="phone">
+                   <label for="contactTell">Phone call</label>
+
+                   <input type="radio" name="contact" id="contactText" value="text">
+                   <label for="contactText">Text message</label>
+               </div>
+
+               <input type="submit" name="submit" id="submit" value="Contact Us">
+           </fieldset>
+       </form>
+   </section> 
+    
+</body>
+</html>
